@@ -2,7 +2,9 @@ import {Container} from './style'
 
 function Navbar() {
   return (
-    <Container>Navbar</Container>
+    <Container>
+      <h1>Navbar</h1>
+    </Container>
   )
 }
 

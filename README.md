@@ -18,5 +18,3 @@
 #4. Vite Plugin Svgr
 #yarn add vite-plugin-svgr
 #(https://classic.yarnpkg.com/en/package/vite-plugin-svgr)
-
-10:00-4 dars
