@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Outlet, useLocation, useNavigate } from "react-router-dom";
-import {Container, Side, Body, Wrapper, Logo, LogOut, Menu, MenuItem, Arrow, ChildWrapper, ExitIcan} from './style'
+import {Container, Side, Body, Wrapper, Logo, LogOut, Menu, MenuItem, Arrow, ChildWrapper, ExitIcon} from './style'
 import Navbar from "../Navbar"
 import Profile from "./profile"
 import sidebar from "../../utils/sidebar"
@@ -8,9 +8,8 @@ import sidebar from "../../utils/sidebar"
 export default function Sidebar() {
   const [open, setOpen] = useState([]);
 
-
   const navigate = useNavigate();
-  const location = useLocation(); 
+  const location = useLocation();
 
   useEffect(() => {
     const path = JSON.parse(localStorage.getItem("open"));
@@ -22,9 +21,8 @@ export default function Sidebar() {
   const onClickLogo = () => {
     navigate("/");
   };
-
   const onLogOut = () => {
-    navigate("/");
+    navigate("/login");
   };
 
   const onClickParent = ({ id, children, path }, e) => {
@@ -44,17 +42,17 @@ export default function Sidebar() {
 
   return (
     <Container>
-        <Side onClick={onClickLogo}>
-          <Logo onClick={onClickLogo}>Humo CRM</Logo>
-          <Profile />
-          <Menu>
-            {sidebar.map((parent) => {
-              const active = open.includes(parent.id);
-              const {icon: Icon} = parent;
-              const activePath = location.pathname?.includes(parent.path);
+      <Side>
+        <Logo onClick={onClickLogo}>Humo CRM</Logo>
+        <Profile />
+        <Menu>
+          {sidebar.map((parent) => {
+            const active = open.includes(parent.id);
+            const { icon: Icon } = parent;
+            const activePath = location.pathname?.includes(parent.path);
 
-              return(
-                <React.Fragment key={parent.id}>
+            return !parent.hidden ? (
+              <React.Fragment key={parent.id}>
                 <MenuItem
                   onClick={(e) => onClickParent(parent, e)}
                   active={activePath.toString()}
@@ -80,11 +78,14 @@ export default function Sidebar() {
                   })}
                 </ChildWrapper>
               </React.Fragment>
-              );
-            })}
-          </Menu>
-          <LogOut onClick={onLogOut}><ExitIcan />Chiqish</LogOut>
-        </Side>
+            ) : null;
+          })}
+        </Menu>
+
+        <LogOut onClick={onLogOut}>
+          <ExitIcon /> Chiqish
+        </LogOut>
+      </Side>
         <Body>
           <Navbar/>
           <Wrapper>

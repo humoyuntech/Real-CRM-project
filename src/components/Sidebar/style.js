@@ -159,14 +159,14 @@ MenuItem.Title = styled.div`
 
 const ChildWrapper = styled.div`
   margin-left: 35px;
-  height: ${({ active }) => (active ? "auto" : "0px")};
+  height: ${({ active }) => (active === "true" ? "auto" : "0px")};
   overflow: hidden;
 `;
 
-const ExitIcan = styled(exit)`
- margin-right: 16px;
+const ExitIcon = styled(exit)`
+  margin-right: 16px;
 `;
 
 
-export {Container, Side, Body, Wrapper, Logo, LogOut, ProfileContaier, Menu,  MenuItem, Arrow, ChildWrapper, ExitIcan }
+export {Container, Side, Body, Wrapper, Logo, LogOut, ProfileContaier, Menu,  MenuItem, Arrow, ChildWrapper, ExitIcon }
 
