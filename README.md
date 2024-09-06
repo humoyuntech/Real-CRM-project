@@ -10,6 +10,7 @@
 #2.Material UI
 #yarn add @mui/material @emotion/react @emotion/styled
 #(https://mui.com/material-ui/getting-started/installation/)
+#(yarn add @mui/material @emotion/react @emotion/styled)
 
 #3.react-router-dom
 #yarn add react-router-dom
