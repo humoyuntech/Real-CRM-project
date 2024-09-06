@@ -1,9 +1,18 @@
-import {Container} from './style'
+import {Container, InputWrapper, Section,           Input, SearchIcon} from './style'
+import Time from "./Time";
+import GenericSelect from './Select'
 
 function Navbar() {
   return (
     <Container>
-      <h1>Navbar</h1>
+      <InputWrapper>
+         <SearchIcon />
+         <Input placeholder='Search'/>
+      </InputWrapper>
+      <Section>
+        <Time />
+        <GenericSelect />
+      </Section>
     </Container>
   )
 }
