@@ -10,7 +10,7 @@ function GenericSelect() {
 
   return (
     <FormControl fullWidth sx={{m:1, minWidth: 120, width: 150}}>
-    <InputLabel id="demo-simple-select-label">Age</InputLabel>
+    <InputLabel id="demo-simple-select-label">Language</InputLabel>
     <Select
         labelId="demo-simple-select-label"
         id="demo-simple-select"
