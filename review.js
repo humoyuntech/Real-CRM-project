@@ -21,6 +21,7 @@
     #(yarn add vite-plugin-svgr)
     #(https://classic.yarnpkg.com/en/package/vite-plugin-svgr)
 
+    https://teletype.in/@webbrain_ceo/crm
 */
 
 /**
@@ -36,7 +37,5 @@
     git branch -M main
     git push -u origin main
  */
-/**
- * 10-dars | Navbar
- * 11-dars
- */
+
+// 

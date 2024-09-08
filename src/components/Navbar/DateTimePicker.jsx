@@ -5,14 +5,17 @@ import moment from "moment";
 
 function DateTimePicker() {
   return (
+
     <LocalizationProvider dateAdapter={AdapterMoment}>
     <DatePicker
       label="Date"
       defaultValue={moment()}
       views={["year", "month", "day"]}
       slotProps={{ textField: { size: "small" } }}
+      sx={{width: 150}}
     />
   </LocalizationProvider>
+
   )
 }
 
