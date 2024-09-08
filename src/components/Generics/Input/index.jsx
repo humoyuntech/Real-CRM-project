@@ -1,8 +1,16 @@
-import {Container} from './style'
-function Input() {
+/* eslint-disable react/prop-types */
+import {Container, Input} from './style';
+
+function GenericInput(props) {
+  const {iconLeft, iconRight} = props;
   return (
-    <Container>Input</Container>
+    <Container {...props}>
+      {iconLeft && iconLeft}
+      <Input {...props}/>
+      {iconRight && iconRight}
+    </Container>
   )
 }
 
-export default Input
+
+export default GenericInput
