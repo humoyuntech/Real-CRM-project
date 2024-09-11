@@ -32,10 +32,13 @@ const Side = styled.div`
 
 const Body = styled.div`
     flex: 1;
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 100vh;
 `;
 
 const Wrapper = styled.div`
-    border: 2px solid blue;
+     border-radius: 8px;
     margin: 16px;
     background-color: white;
 `
@@ -53,6 +56,7 @@ const Logo = styled.div`
     background-color: white;
     position: sticky;
     top: 0;
+    z-index: 9999;
 `
 
 const LogOut =styled(Logo)`
