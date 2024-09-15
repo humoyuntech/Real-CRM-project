@@ -112,6 +112,23 @@ const SubCard = styled(Card)`
   border: 1px solid rgba(240, 240, 240, 1);
 `;
 
-export {Container, Wrapper, Card, Section, Plus, Counter, Arrow, SubCard};
+const FooterWrapper =styled.div`
+  display: flex;
+  gap: 17px;
+  flex: 1;
+
+`;
+
+FooterWrapper.Email = styled("div")`
+  flex: 1.9;
+  /* outline: 1px solid yellow; */
+`;
+FooterWrapper.Moliya = styled("div")`
+  flex: 1;
+  /* outline: 1px solid yellow; */
+
+`;
+
+export {Container, Wrapper, Card, Section, Plus, Counter, Arrow, SubCard, FooterWrapper};
 
 
