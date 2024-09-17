@@ -39,8 +39,9 @@
     git push -u origin main
  */
 
-// 16-dars 005/Analytics-page
+// 18-dars #006/Generics
 
+// 31:42
 
 //   1 - dars | Project haqida | YouTube Link
 // — Bu qanday project?
