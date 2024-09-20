@@ -25,7 +25,9 @@ export default function Sidebar() {
     navigate("/login");
   };
 
-  const onClickParent = ({ id, children, path }, e) => {
+  const onClickParent = ({ id, children, path, title }, e) => {
+    e.preventDefault();
+
     if (open?.includes(id)) {
       let data = open.filter((val) => val !== id);
       localStorage.setItem("open", JSON.stringify(data));
@@ -35,15 +37,17 @@ export default function Sidebar() {
       setOpen([...open, id]);
     }
     if (!children) {
-      e.preventDefault();
-      navigate(path);
+      navigate(path, { state: { parent: title } });
     }
   };
-
+  const onClickChild = (parent, child, path, e) => {
+    e.preventDefault();
+    navigate(path, { state: { parent, child } });
+  };
   return (
     <Container>
       <Side>
-        <Logo onClick={onClickLogo}>Humo CRM</Logo>
+        <Logo onClick={onClickLogo}>Webbrain CRM</Logo>
         <Profile />
         <Menu>
           {sidebar.map((parent) => {
@@ -70,7 +74,12 @@ export default function Sidebar() {
                       <MenuItem
                         key={child?.id}
                         to={child.path}
-                        active={(location.pathname === child.path).toString()}
+                        onClick={(e) =>
+                          onClickChild(parent.title, child.title, child.path, e)
+                        }
+                        active={location.pathname
+                          ?.includes(child.path)
+                          .toString()}
                       >
                         <MenuItem.Title>{child?.title}</MenuItem.Title>
                       </MenuItem>
@@ -86,14 +95,14 @@ export default function Sidebar() {
           <ExitIcon /> Chiqish
         </LogOut>
       </Side>
-        <Body>
-          <Navbar/>
-          <Wrapper>
-            <Outlet />
-          </Wrapper>
-        </Body>
+      <Body>
+        <Navbar />
+        <Wrapper>
+          <Outlet />
+        </Wrapper>
+      </Body>
     </Container>
-  )
+  );
 }
 
-
+// 17:00
