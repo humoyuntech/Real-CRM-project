@@ -23,7 +23,7 @@ const Side = styled.div`
     min-width: 280px;
     background-color: white;
     height: 100vh;
-    overflow-y: hidden;
+    overflow: hidden;
     overflow-y: scroll;
     &::-webkit-scrollbar{
         width: 0;
@@ -35,10 +35,12 @@ const Body = styled.div`
     overflow: hidden;
     overflow-y: scroll;
     height: 100vh;
+    min-width: calc(1440px - 280px);
+    overflow-y: scroll;
 `;
 
 const Wrapper = styled.div`
-     border-radius: 8px;
+    border-radius: 8px;
     margin: 16px;
     background-color: white;
 `
