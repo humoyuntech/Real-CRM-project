@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useLocation } from "react-router-dom";
 import Title from "../Title";
 import { Container, Arrow } from "./style";
