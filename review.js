@@ -39,9 +39,9 @@
     git push -u origin main
  */
     
-// 18-dars #006/Generics
+// 21-dars #007/Generics_table
+// 18:18
 
-// 31:42
 
 //   1 - dars | Project haqida | YouTube Link
 // — Bu qanday project?
