@@ -8,9 +8,10 @@ import Course from "../assets/icons/course.svg?react";
 import HR from "../assets/icons/hr.svg?react";
 import Settings from "../assets/icons/setting.svg?react";
 // Components
-// import Generics from "../components/Generics/Generics";
-import Generics from "../view/Generics";
+import { Generics } from "../view/Generics";
 import { AnalyticsView } from "../view/AnalyticsView";
+import AllLidsView from "../view/Lids/All";
+// import { AnalitikaView } from "../views/Analitika";
 // import LidsAllView from "../views/LidsAll";
 // import FirstClassView from "../views/FirstClass";
 // import NewStudentsView from "../views/NewStudents";
@@ -42,7 +43,7 @@ const sidebar = [
         title: "Barcha Lidlar",
         path: "/lidlar/all-lids",
         isPrivate: true,
-        element: Generics,
+        element: AllLidsView,
         role: ["admin", "manager"],
       },
       {
