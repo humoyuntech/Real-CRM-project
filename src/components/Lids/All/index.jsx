@@ -1,7 +1,10 @@
-import GenericTable from "../../Generics/Table"
-import {Container} from "./style"
+import { useState } from "react";
+import GenericTable from "../../Generics/Table";
+import { Container } from "./style";
+import Breadcrumb from "../../Generics/BreadCrumb";
 
-function AllLids() {
+export const AllLids = () => {
+  const [open, setOpen] = useState(false);
   const headCells = [
     { id: "name", label: "O'quvchining ismi" },
     { id: "group", label: "Guruh / Fan" },
@@ -35,12 +38,14 @@ function AllLids() {
       admin: "Webbrain Admin",
     },
   ];
-
   return (
     <Container>
-        <GenericTable headCells={headCells} rows={rows} />
+      <Breadcrumb>
+        <button onClick={() => setOpen(!open)}>Filter</button>
+        <button onClick={() => setOpen(!open)}>Import</button>
+        <button onClick={() => setOpen(!open)}>Buyurtma berish</button>
+      </Breadcrumb>
+      <GenericTable open={open} headCells={headCells} rows={rows} />
     </Container>
-  )
-}
-
-export default AllLids
+  );
+};

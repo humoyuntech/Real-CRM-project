@@ -1,4 +1,4 @@
-import AllLids from '../../../components/Lids/All'
+import {AllLids} from '../../../components/Lids/All'
 
 const AllLidsWiew = () => <AllLids />;
 

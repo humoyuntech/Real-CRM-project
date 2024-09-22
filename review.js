@@ -39,8 +39,7 @@
     git push -u origin main
  */
     
-// 21-dars #007/Generics_table
-// 18:18
+// 23-dars #007/Generics_table
 
 
 //   1 - dars | Project haqida | YouTube Link
