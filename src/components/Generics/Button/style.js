@@ -67,3 +67,4 @@ Button.Delete = styled(Button)`
 `;
 
 export {Button, Icons };
+export default Button;
