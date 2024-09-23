@@ -39,7 +39,9 @@
     git push -u origin main
  */
     
-// 23-dars #007/Generics_table
+// 24-dars #008/Generics_button
+// git push -u origin "#008/Generics_button"
+
 
 
 //   1 - dars | Project haqida | YouTube Link

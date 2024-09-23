@@ -47,7 +47,7 @@ export default function Sidebar() {
   return (
     <Container>
       <Side>
-        <Logo onClick={onClickLogo}>Webbrain CRM</Logo>
+        <Logo onClick={onClickLogo}>Humo CRM</Logo>
         <Profile />
         <Menu>
           {sidebar.map((parent) => {
@@ -104,5 +104,3 @@ export default function Sidebar() {
     </Container>
   );
 }
-
-// 17:00
