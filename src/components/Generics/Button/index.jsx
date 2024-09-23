@@ -1,5 +1,5 @@
-/* eslint-disable no-undef */
 /* eslint-disable react/prop-types */
+
 import {Button, Icons} from './style'
 
 function GenericButton(props) {
