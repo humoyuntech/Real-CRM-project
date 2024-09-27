@@ -9,7 +9,7 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import Checkbox from "@mui/material/Checkbox";
-import GenericSelect from "../Select";
+
 
 function EnhancedTableHead(props) {
   const { onSelectAllClick, numSelected, rowCount, headCells } = props;
@@ -71,14 +71,6 @@ export default function GenericTable(props) {
   };
 
   const isSelected = (id) => selected.indexOf(id) !== -1;
-  const data1 = [
-    {value: "uzbek", title: "Uzbek"},
-    {value: "arabic", title: "Arabic"},
-    {value: "turkish", title: "Turkish"},
-    {value: "english", title: "English"},
-    {value: "russian", title: "Russian"},
-    {value: "german", title: "German"},
-  ];
 
   return (
     <Box sx={{ width: "100%" }}>
@@ -86,13 +78,7 @@ export default function GenericTable(props) {
         <Table>
           <TableBody>
           <TableRow sx={{ display: "flex", justifyContent: "space-between" }}>
-              {/* <TableCell sx={{ border: 0 }}>TEST</TableCell> */}
-              <GenericSelect value="uzbek" data={data1} label="Status"/>
-              <GenericSelect value="english" data={data1} label="Ranglar" />
-              <GenericSelect value="russian" data={data1} label="Gruhlar" />
-              <GenericSelect data={data1} label="Kurslar" />
-              <GenericSelect data={data1} label="Moderatorlar" />
-              <GenericSelect data={data1} label="Sabablar"/>
+              {props.children}
             </TableRow>
           </TableBody>
         </Table>
@@ -134,7 +120,7 @@ export default function GenericTable(props) {
 
                     {headCells.map((val) => (
                       <TableCell align="left" key={val.id} sx={{color: "#253E5F"}}>
-                        {row[val.id]}
+                        {val.render ? val.render : row[val.id]}
                       </TableCell>
                     ))}
                   </TableRow>
@@ -154,3 +140,4 @@ export default function GenericTable(props) {
     </Box>
   );
 }
+
