@@ -5,7 +5,8 @@ import {Container, Action} from "./style";
 import Breadcrumb from "../../Generics/BreadCrumb";
 import GenericButton from "../../Generics/Button";
 import GenericSelect from "../../Generics/Select";
-import Modal from "../../Generics/Modal";
+
+import AllLidsModal from "./modal";
 
 export const AllLids = () => {
   const [open, setOpen] = useState(false);
@@ -72,23 +73,25 @@ export const AllLids = () => {
     {value: "russian", title: "Russian"},
     {value: "german", title: "German"},
   ];
+
+  const onToggleModal = () =>{
+      setModal(!modalOpen)
+  }
+
+  const onSave = () =>{
+    console.log("onSave");
+    
+}
+
   return (
     <Container>
-      <Modal open={modalOpen}>
-          <GenericButton type="add">Talaba qo'shish</GenericButton>
-      </Modal>
+      <AllLidsModal open={modalOpen} onClose={onToggleModal} onSave={onSave}/>
       <Breadcrumb>
           <GenericButton type="import" onClick={() => setOpen(!open)}>Import</GenericButton>
           <GenericButton type="filter" onClick={() => setOpen(!open)}>Filter</GenericButton>
-          <GenericButton type="add" onClick={() => setModal(!modalOpen)}>Lid qo'shish</GenericButton>
-
-          {/* <GenericButton type="primary" onClick={() => setOpen(!open)}>primary</GenericButton>
-          <GenericButton type="save" onClick={() => setOpen(!open)}>save</GenericButton>
-          <GenericButton type="delete" onClick={() => setOpen(!open)}>delete</GenericButton> */}
-         
+          <GenericButton type="add" onClick={onToggleModal}>Lid qo'shish</GenericButton>         
       </Breadcrumb>
       <GenericTable open={open} headCells={headCells} rows={rows}>
-              {/* <TableCell sx={{ border: 0 }}>TEST</TableCell> */}
               <GenericSelect data={data1} />
               <GenericSelect data={data1} />
               <GenericSelect data={data1} />
