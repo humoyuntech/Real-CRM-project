@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/no-unescaped-entities */
 import { useState } from "react";
 import GenericTable from "../../Generics/Table";
@@ -11,9 +12,12 @@ import AllLidsModal from "./modal";
 export const AllLids = () => {
   const [open, setOpen] = useState(false);
   const [modalOpen, setModal] = useState(false);
+  const [modalProps, setModalProps] = useState({})
 
-  const onEdit = (e) => {
+  const onEdit = (e, res) => {
     e.stopPropagation();
+    setModal(!modalOpen);
+    setModalProps(res);
   };
 
   const onMove = (e) => {
@@ -29,9 +33,9 @@ export const AllLids = () => {
     {
       id: "action",
       label: "",
-      render: (
+      render: (res) => (
         <Action>
-          <Action.Edit onClick={onEdit} />
+          <Action.Edit onClick={(e) => onEdit(e, res)} />
           <Action.Move onClick={onMove} />
         </Action>
       ),
@@ -43,24 +47,30 @@ export const AllLids = () => {
       id: 1,
       name: "Webbrain",
       group: "Frontend",
+      days: "toq kunlari",
       date: "21.05.2024",
       addedDate: "21.05.2024",
       admin: "Webbrain Admin",
+      level: "Beginer",
     },
     {
       id: 2,
       name: "Webbrain",
       group: "Frontend",
       date: "21.05.2024",
+      days: "toq kunlari",
       addedDate: "21.05.2024",
       admin: "Webbrain Admin",
+      level: "Junior",
     },
     {
       id: 3,
       name: "Webbrain",
       group: "Frontend",
+      days: "toq kunlari",
       date: "21.05.2024",
       addedDate: "21.05.2024",
+      level: "Advanced",
       admin: "Webbrain Admin",
     },
   ];
@@ -75,7 +85,8 @@ export const AllLids = () => {
   ];
 
   const onToggleModal = () =>{
-      setModal(!modalOpen)
+    setModal(!modalOpen);
+    setModalProps(null);
   }
 
   const onSave = () =>{
@@ -85,7 +96,7 @@ export const AllLids = () => {
 
   return (
     <Container>
-      <AllLidsModal open={modalOpen} onClose={onToggleModal} onSave={onSave}/>
+      <AllLidsModal data={modalProps} open={modalOpen} onClose={onToggleModal} onSave={onSave}/>
       <Breadcrumb>
           <GenericButton type="import" onClick={() => setOpen(!open)}>Import</GenericButton>
           <GenericButton type="filter" onClick={() => setOpen(!open)}>Filter</GenericButton>
@@ -102,4 +113,6 @@ export const AllLids = () => {
     </Container>
   );
 };
+
+
 
