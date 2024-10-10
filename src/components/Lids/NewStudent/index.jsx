@@ -11,23 +11,19 @@ import { DatePicker, LocalizationProvider } from "@mui/x-date-pickers";
 import moment from "moment/moment";
 import { AdapterMoment } from "@mui/x-date-pickers/AdapterMoment";
 
-export const FirstClass  = () => {
+export const NewStudent  = () => {
   const [open, setOpen] = useState(false);
   const [modalOpen, setModal] = useState(false);
-  const [modalProps, setModalProps] = useState({})
-
+  const [modalProps, setModalProps] = useState({});
   const onEdit = (e, res) => {
     e.stopPropagation();
     setModal(!modalOpen);
     setModalProps(res);
   };
 
-  const onMove = (e) => {
-    e.stopPropagation();
-  };
-
- const headCells = [
+  const headCells = [
     { id: "name", label: "O'quvchining ismi" },
+    { id: "phone", label: "Telefon raqam" },
     { id: "group", label: "Guruh / Fan" },
     { id: "date", label: "Dars kuni va vaqti" },
     { id: "addedDate", label: "Qo’shilgan sana" },
@@ -43,7 +39,6 @@ export const FirstClass  = () => {
       ),
     },
   ];
-
   let rows = [
     {
       id: 1,
@@ -54,6 +49,7 @@ export const FirstClass  = () => {
       addedDate: "21.05.2024",
       admin: "Webbrain Admin",
       level: "Beginer",
+      phone: "+998 20 007 1226",
     },
     {
       id: 2,
@@ -64,6 +60,7 @@ export const FirstClass  = () => {
       addedDate: "21.05.2024",
       admin: "Webbrain Admin",
       level: "Junior",
+      phone: "+998 20 007 1226",
     },
     {
       id: 3,
@@ -74,46 +71,52 @@ export const FirstClass  = () => {
       addedDate: "21.05.2024",
       level: "Advanced",
       admin: "Webbrain Admin",
+      phone: "+998 20 007 1226",
     },
   ];
-
   const data1 = [
-    {value: "uzbek", title: "Uzbek"},
-    {value: "arabic", title: "Arabic"},
-    {value: "turkish", title: "Turkish"},
-    {value: "english", title: "English"},
-    {value: "russian", title: "Russian"},
-    {value: "german", title: "German"},
+    { value: "uzbek", title: "Uzbek" },
+    { value: "russian", title: "Russian" },
+    { value: "english", title: "English" },
   ];
 
-  const onToggleModal = () =>{
+  const onToggleModal = () => {
     setModal(!modalOpen);
     setModalProps(null);
-  }
-
-  const onSave = () =>{
-    console.log("onSave");
-    
-}
-
+  };
+  const onSave = () => {
+    // setModal(!modalOpen);
+  };
   return (
     <Container>
-      <AllLidsModal data={modalProps} open={modalOpen} onClose={onToggleModal} onSave={onSave}/>
+      <AllLidsModal
+        data={modalProps}
+        open={modalOpen}
+        onClose={onToggleModal}
+        onSave={onSave}
+      />
       <Breadcrumb>
-          <GenericButton type="import" onClick={() => setOpen(!open)}>Import</GenericButton>
-          <GenericButton type="filter" onClick={() => setOpen(!open)}>Filter</GenericButton>    
+        <GenericButton type="import" onClick={() => setOpen(!open)}>
+          Import
+        </GenericButton>
+        <GenericButton type="filter" onClick={() => setOpen(!open)}>
+          Filter
+        </GenericButton>
+        <GenericButton type="add" onClick={onToggleModal}>
+          Talaba qo'shish
+        </GenericButton>
       </Breadcrumb>
       <GenericTable open={open} headCells={headCells} rows={rows}>
-      <LocalizationProvider dateAdapter={AdapterMoment}>
+        <LocalizationProvider dateAdapter={AdapterMoment}>
           <DatePicker
             defaultValue={moment()}
             views={["year", "month", "day"]}
             slotProps={{ textField: { size: "small" } }}
           />
         </LocalizationProvider>
-
-              <GenericSelect data={data1} />
-              <GenericSelect data={data1} />
+        <GenericSelect data={data1} />
+        <GenericSelect data={data1} />
+        <GenericSelect data={data1} />
       </GenericTable>
     </Container>
   );
@@ -121,4 +124,10 @@ export const FirstClass  = () => {
 
 
 
-export default FirstClass;
+export default NewStudent;
+
+
+
+
+
+
