@@ -13,12 +13,11 @@ import { AnalyticsView } from "../view/AnalyticsView";
 import FirstClassWiew from "../view/Lids/First";
 import AllLidsView from "../view/Lids/All";
 import NewStudentView from "../view/Lids/New";
-// import { AnalitikaView } from "../views/Analitika";
-// import LidsAllView from "../views/LidsAll";
-// import FirstClassView from "../views/FirstClass";
-// import NewStudentsView from "../views/NewStudents";
-// import GroupsView from "../views/GroupsView";
-// import GroupsRoomView from "../views/GroupsRoom";
+
+import { ArchiveStudentsView } from "../view/Students/Archive.jsx";
+import { ActiveStudentsView } from "../view/Students/Active.jsx";
+import { AllStudentsView } from "../view/Students/All.jsx";
+
 
 const sidebar = [
   {
@@ -93,25 +92,25 @@ const sidebar = [
         parentID: 4,
         path: "/talabalar/all-talabalar",
         isPrivate: true,
-        element: Generics,
+        element: AllStudentsView,
         role: ["admin", "manager"],
       },
-      {
-        id: `4-2`,
-        title: "Davomat",
-        path: "/talabalar/davomat",
-        parentID: 4,
-        isPrivate: true,
-        element: Generics,
-        role: ["admin", "manager"],
-      },
+      // {
+      //   id: `4-2`,
+      //   title: "Davomat",
+      //   path: "/talabalar/davomat",
+      //   parentID: 4,
+      //   isPrivate: true,
+      //   element: Generics,
+      //   role: ["admin", "manager"],
+      // },
       {
         id: `4-3`,
         title: "Aktive",
         path: "/talabalar/active",
         parentID: 4,
         isPrivate: true,
-        element: Generics,
+        element: ActiveStudentsView,
         role: ["admin", "manager"],
       },
       {
@@ -120,18 +119,18 @@ const sidebar = [
         path: "/talabalar/archive",
         isPrivate: true,
         parentID: 4,
-        element: Generics,
+        element: ArchiveStudentsView,
         role: ["admin", "manager"],
       },
-      {
-        id: `4-5`,
-        title: "Ota-onalar",
-        path: "/talabalar/parents",
-        parentID: 4,
-        isPrivate: true,
-        element: Generics,
-        role: ["admin", "manager"],
-      },
+      // {
+      //   id: `4-5`,
+      //   title: "Ota-onalar",
+      //   path: "/talabalar/parents",
+      //   parentID: 4,
+      //   isPrivate: true,
+      //   element: Generics,
+      //   role: ["admin", "manager"],
+      // },
     ],
   },
   {
