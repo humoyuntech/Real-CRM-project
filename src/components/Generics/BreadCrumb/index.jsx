@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
 import { useLocation } from "react-router-dom";
 import Title from "../Title";
-import { Container, Arrow } from "./style";
+import { Arrow, Container } from "./style";
 import Subtitle from "../Subtitle";
 
-export function BreadCrumb(props) {
+export const Breadcrumb = (props) => {
   const location = useLocation();
   console.log(location, "loc");
   return location.pathname !== "/analitika" ? (
@@ -12,9 +12,11 @@ export function BreadCrumb(props) {
       <Title>{location.state?.parent}</Title>
       {location.state?.child && <Arrow />}
       <Subtitle>{location.state?.child}</Subtitle>
-      <div style={{display: "flex", marginLeft: "auto", gap: 16}}>{props.children}</div>
+      <div style={{ display: "flex", marginLeft: "auto", gap: 16 }}>
+        {props.children}
+      </div>
     </Container>
   ) : null;
-}
+};
 
-export default BreadCrumb;
+export default Breadcrumb
