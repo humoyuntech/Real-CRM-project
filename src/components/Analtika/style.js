@@ -26,20 +26,18 @@ const getColor = (title) => {
   }
 };
 
-const Container = styled.div`
+export const Container = styled.div`
   padding: 24px;
-  /* border-radius: 8px; */
-
+  border-radius: 8px;
 `;
 
-const Wrapper = styled.div`
-    display: flex;
-    gap: ${({gap}) => getValue(gap, "16px")};
-    width: 100%;
+export const Wrapper = styled.div`
+  display: flex;
+  gap: ${({ gap }) => getValue(gap, "16px")};
+  width: 100%;
 `;
-
-const Card = styled.div`
-     display: flex;
+export const Card = styled.div`
+  display: flex;
   flex-direction: column;
   flex: 1;
   /* border: 1px solid red; */
@@ -49,8 +47,8 @@ const Card = styled.div`
   background-color: ${({ title }) => getColor(title)?.ternary};
 `;
 
-const Section = styled(Wrapper)`
-   display: flex;
+export const Section = styled(Wrapper)`
+  display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 0;
@@ -69,10 +67,9 @@ const Section = styled(Wrapper)`
   .subicon {
     margin-right: 16px;
   }
-  
 `;
 
-const Plus = styled.div`
+export const Plus = styled.div`
   &::before {
     display: flex;
     justify-content: center;
@@ -97,38 +94,31 @@ const Plus = styled.div`
   cursor: pointer;
 `;
 
-const Counter = styled(Title)`
+export const Counter = styled(Title)`
   font-size: 40px;
-`
-const Arrow = styled(arrowUp)`
-  margin-right: 13px;
-  width: 24px;
-  height: 24px;
 `;
 
-const SubCard = styled(Card)`
+export const Arrow = styled(arrowUp)`
+  width: 24px;
+  height: 24px;
+  margin-right: 13px;
+`;
+
+export const SubCard = styled(Card)`
   padding-bottom: 24px;
   border-radius: 8px;
   border: 1px solid rgba(240, 240, 240, 1);
 `;
 
-const FooterWrapper =styled.div`
+export const FooterWrapper = styled.div`
   display: flex;
-  gap: 17px;
   flex: 1;
-
+  gap: 17px;
 `;
 
 FooterWrapper.Email = styled("div")`
-  flex: 1.9;
-  /* outline: 1px solid yellow; */
+  flex: 2;
 `;
 FooterWrapper.Moliya = styled("div")`
   flex: 1;
-  /* outline: 1px solid yellow; */
-
 `;
-
-export {Container, Wrapper, Card, Section, Plus, Counter, Arrow, SubCard, FooterWrapper};
-
-

@@ -1,17 +1,16 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable react/no-unescaped-entities */
 import { useState } from "react";
-import GenericTable from "../../Generics/Table";
-import {Container, Action} from "./style";
-import Breadcrumb from "../../Generics/BreadCrumb";
+import { GenericTable } from "../../Generics/Table";
+import { Action, Container } from "./style";
+import { Breadcrumb } from "../../Generics/BreadCrumb";
 import GenericButton from "../../Generics/Button";
 import GenericSelect from "../../Generics/Select";
 import AllLidsModal from "./modal";
 import { DatePicker, LocalizationProvider } from "@mui/x-date-pickers";
-import moment from "moment/moment";
 import { AdapterMoment } from "@mui/x-date-pickers/AdapterMoment";
+import moment from "moment";
 
-export const NewStudent  = () => {
+export const NewStudent = () => {
   const [open, setOpen] = useState(false);
   const [modalOpen, setModal] = useState(false);
   const [modalProps, setModalProps] = useState({});
@@ -122,12 +121,4 @@ export const NewStudent  = () => {
   );
 };
 
-
-
 export default NewStudent;
-
-
-
-
-
-

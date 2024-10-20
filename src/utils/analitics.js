@@ -7,7 +7,6 @@ import inIcon from "../assets/icons/instagramIcon.svg?react";
 import lnIcon from "../assets/icons/linkedinIcon.svg?react";
 import tgIcon from "../assets/icons/telegramIcon.svg?react";
 import ytIcon from "../assets/icons/youtubeIcon.svg?react";
-import ytTikTok from "../assets/icons/tiktok.svg?react";
 
 export const privateData = [
   {
@@ -34,7 +33,6 @@ export const privateData = [
     count: 3,
   },
 ];
-
 export const media = [
   {
     id: 1,
@@ -63,7 +61,7 @@ export const media = [
   {
     id: 5,
     title: "Tiktok",
-    icon: ytTikTok,
+    icon: lnIcon,
     count: 3,
   },
 ];

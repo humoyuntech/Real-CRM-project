@@ -1,25 +1,37 @@
 /* eslint-disable react/prop-types */
+import { Button, Icons } from "./style";
 
-import {Button, Icons} from './style'
-
-function GenericButton(props) {
+export const GenericButton = (props) => {
   const { children, type } = props;
-  switch(type){
+  switch (type) {
     case "filter":
-      return (<Button.Filter  {...props}> <Icons.Filter /> {children}</Button.Filter>);
+      return (
+        <Button.Filter {...props}>
+          <Icons.Filter />
+          {children}
+        </Button.Filter>
+      );
     case "import":
-      return (<Button.Import  {...props}>  <Icons.Impprt /> {children}</Button.Import>);
+      return (
+        <Button.Import {...props}>
+          <Icons.Impprt /> {children}
+        </Button.Import>
+      );
     case "save":
     case "primary":
-      return (<Button.Primay {...props}>{children}</Button.Primay>);
+      return <Button.Primay {...props}>{children}</Button.Primay>;
     case "delete":
-      return (<Button.Delete {...props}>{children}</Button.Delete>);
+      return <Button.Delete {...props}>{children}</Button.Delete>;
     case "add":
-      return (<Button.Add {...props}>  <Icons.Plus />{children}</Button.Add>);
+      return (
+        <Button.Add {...props}>
+          <Icons.Plus />
+          {children}
+        </Button.Add>
+      );
     default:
-      return( <Button {...props}>{children}</Button>);
+      return <Button {...props}>{children}</Button>;
   }
-
 };
 
 export default GenericButton;
