@@ -13,8 +13,6 @@ const Container = styled.div`
   top: 0;
 `;
 
-
-
 const SearchIcon = styled(search)`
   margin: 0 16px;
 `;
@@ -32,6 +30,9 @@ const Timer = styled.div`
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
+  /* padding: 2px; */
+  /* width: 80px; */
+  /* border: 1px solid red; */
 `;
 
 export { Container, SearchIcon, Section, Timer };

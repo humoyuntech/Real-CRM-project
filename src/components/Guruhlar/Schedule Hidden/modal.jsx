@@ -1,19 +1,17 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/no-unescaped-entities */
+import { Modal } from "../../Generics/Modal";
 import GenericInput from "../../Generics/Input";
-import Modal from "../../Generics/Modal";
-import GenericSelect from "../../Generics/Select";
 import Subtitle from "../../Generics/Subtitle";
+import GenericSelect from "../../Generics/Select";
 import Title from "../../Generics/Title";
 
-
-function AllLidsModal(props) {
+export const AllLidsModal = (props) => {
   const { data } = props;
   const selectData = data && [
     { value: "Frontend", title: "Frontend" },
     { value: "Backend", title: "Backend" },
   ];
-  
   console.log(data, "data");
   return (
     <Modal {...props}>
@@ -49,8 +47,7 @@ function AllLidsModal(props) {
       </Subtitle>
       <GenericInput fontWeight={500} width={500} />
     </Modal>
-  )
-}
+  );
+};
 
-export default AllLidsModal
-
+export default AllLidsModal;

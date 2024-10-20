@@ -22,8 +22,7 @@ const getColor = ({ title }) => {
   }
 };
 
-
-const Container = styled.div`
+export const Container = styled.div`
   display: flex;
   align-items: center;
   gap: 8px;
@@ -33,8 +32,6 @@ const Container = styled.div`
   margin-bottom: 32px;
 `;
 
-const Arrow = styled(arrow)`
+export const Arrow = styled(arrow)`
   display: flex;
 `;
-
-export {Container, Arrow};

@@ -1,29 +1,30 @@
-import {Container, SearchIcon, Section} from './style'
+import Input from "../Generics/Input";
+import GenericSelect from "../Generics/Select";
+import DateTimePicker from "./DateTimePicker";
 import Time from "./Time";
-import DateTimePicker from './DateTimePicker'
-import Input from '../Generics/Input';
-import GenericSelect from '../Generics/Select';
+import { Container, SearchIcon, Section } from "./style";
 
-function Navbar() {
+export const Navbar = () => {
   const data = [
-    {value: "uzbek", title: "Uzbek"},
-    {value: "arabic", title: "Arabic"},
-    {value: "turkish", title: "Turkish"},
-    {value: "english", title: "English"},
-    {value: "russian", title: "Russian"},
-    {value: "german", title: "German"},
+    { value: "russian", title: "Russian" },
+    { value: "uzbek", title: "Uzbek" },
+    { value: "english", title: "English" },
   ];
-  
   return (
     <Container>
-      <Input width={500} borderRadius={8} height={40} iconLeft={<SearchIcon />} />
+      <Input
+        width={500}
+        height={40}
+        borderRadius={8}
+        iconLeft={<SearchIcon />}
+      />
       <Section>
         <Time />
         <DateTimePicker />
-        <GenericSelect label="Language" data={data}/>
+        <GenericSelect label="Language" data={data} />
       </Section>
     </Container>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

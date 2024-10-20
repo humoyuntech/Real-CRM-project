@@ -9,18 +9,16 @@ import HR from "../assets/icons/hr.svg?react";
 import Settings from "../assets/icons/setting.svg?react";
 // Components
 import { Generics } from "../view/Generics";
-import { AnalyticsView } from "../view/AnalyticsView";
-import FirstClassWiew from "../view/Lids/First";
+import { AnalitikaView } from "../view/AnalitikaView";
+import FirstClassView from "../view/Lids/First";
 import AllLidsView from "../view/Lids/All";
 import NewStudentView from "../view/Lids/New";
-
 import { ArchiveStudentsView } from "../view/Students/Archive.jsx";
 import { ActiveStudentsView } from "../view/Students/Active.jsx";
 import { AllStudentsView } from "../view/Students/All.jsx";
-
 import GuruhlarView from "../view/Guruhlar/Guruhlar.jsx";
-import { ScheduleView } from "../view/Guruhlar/Schedule.jsx";
-import RoomsView from "../view/Guruhlar/Rooms.jsx";
+// import { ScheduleView } from "../view/Guruhlar/Schedule.jsx";
+import { RoomsView } from "../view/Guruhlar/Rooms.jsx";
 
 const sidebar = [
   {
@@ -29,7 +27,7 @@ const sidebar = [
     path: "/analitika",
     icon: Analitika,
     isPrivate: true,
-    element: AnalyticsView,
+    element: AnalitikaView,
     role: ["admin", "manager"],
   },
   {
@@ -56,7 +54,7 @@ const sidebar = [
         title: "Birinchi Dars",
         path: "/lidlar/first-class",
         isPrivate: true,
-        element: FirstClassWiew,
+        element: FirstClassView,
         role: ["admin", "manager"],
       },
       {
@@ -154,15 +152,15 @@ const sidebar = [
         element: GuruhlarView,
         role: ["admin", "manager"],
       },
-      {
-        id: `5-2`,
-        title: "Dars Jadvali",
-        parentID: 5,
-        path: "/guruhlar/jadval",
-        isPrivate: true,
-        element: ScheduleView,
-        role: ["admin", "manager"],
-      },
+      // {
+      //   id: `5-2`,
+      //   title: "Dars Jadvali",
+      //   parentID: 5,
+      //   path: "/guruhlar/jadval",
+      //   isPrivate: true,
+      //   element: ScheduleView,
+      //   role: ["admin", "manager"],
+      // },
       {
         id: `5-3`,
         title: "Xonalar",

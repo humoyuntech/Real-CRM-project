@@ -38,7 +38,8 @@ export const DateCard = styled.div`
   height: 72px;
   border-radius: 24px;
   border: 1px solid #f0f0f0;
-  background-color: ${({ active }) => active ? "var(--activeColor)" : "white"};
-  color: white;
+  background-color: ${({ active }) =>
+    active ? "var(--activeColor)" : "white"};
+  /* color: white; */
   cursor: pointer;
 `;

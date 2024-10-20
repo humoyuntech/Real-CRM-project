@@ -1,7 +1,7 @@
 import {ProfileContaier} from './style';
 import noImg from "../../assets/images/noUser.webp"
 
-function Profile() {
+export function Profile() {
   return (
     <ProfileContaier>
         <ProfileContaier.Image src={noImg}/>

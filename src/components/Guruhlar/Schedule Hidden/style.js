@@ -5,6 +5,7 @@ export const Container = styled.div``;
 export const Action = styled.div`
   display: flex;
   justify-content: flex-end;
+  /* gap: 18px; */
   z-index: 9999;
 `;
 

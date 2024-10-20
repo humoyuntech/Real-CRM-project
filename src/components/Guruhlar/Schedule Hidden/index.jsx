@@ -1,17 +1,16 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable react/no-unescaped-entities */
 import { useState } from "react";
-import GenericTable from "../../Generics/Table";
-import {Container, Action} from "./style";
-import Breadcrumb from "../../Generics/BreadCrumb";
+import { GenericTable } from "../../Generics/Table";
+import { Action, Container } from "./style";
+import { Breadcrumb } from "../../Generics/BreadCrumb";
 import GenericButton from "../../Generics/Button";
 import GenericSelect from "../../Generics/Select";
 import AllLidsModal from "./modal";
 import { DatePicker, LocalizationProvider } from "@mui/x-date-pickers";
-import moment from "moment/moment";
 import { AdapterMoment } from "@mui/x-date-pickers/AdapterMoment";
+import moment from "moment";
 
-export const NewStudent  = () => {
+export const Schedule = () => {
   const [open, setOpen] = useState(false);
   const [modalOpen, setModal] = useState(false);
   const [modalProps, setModalProps] = useState({});
@@ -23,7 +22,38 @@ export const NewStudent  = () => {
 
   const headCells = [
     { id: "name", label: "O'quvchining ismi" },
-    { id: "phone", label: "Telefon raqam" },
+    {
+      id: "completed",
+      label: "Status",
+      render: (res) => (
+        <span
+          style={{ color: !res?.completed ? "red" : "green", fontWeight: 600 }}
+        >
+          {res?.completed ? "Tugallangan" : "Tugallanmagan"}
+        </span>
+      ),
+    },
+    { id: "phone", label: "Telefon Raqam" },
+    {
+      id: "balance",
+      label: "Balans",
+      render: (res) => {
+        let active = res?.balance?.includes("-");
+        return (
+          <span
+            style={{
+              background: active ? "red" : "green",
+              color: "white",
+              padding: "4px 10px",
+              borderRadius: "8px",
+            }}
+          >
+            {res?.balance}{" "}
+          </span>
+        );
+      },
+    },
+    { id: "parent", label: "Ota onasi" },
     { id: "group", label: "Guruh / Fan" },
     { id: "date", label: "Dars kuni va vaqti" },
     { id: "addedDate", label: "Qo’shilgan sana" },
@@ -50,6 +80,9 @@ export const NewStudent  = () => {
       admin: "Webbrain Admin",
       level: "Beginer",
       phone: "+998 20 007 1226",
+      balance: "-200,000",
+      parent: "Eshmatov Toshmat",
+      completed: true,
     },
     {
       id: 2,
@@ -61,6 +94,9 @@ export const NewStudent  = () => {
       admin: "Webbrain Admin",
       level: "Junior",
       phone: "+998 20 007 1226",
+      balance: "200,000",
+      completed: true,
+      parent: "Eshmatov Toshmat",
     },
     {
       id: 3,
@@ -72,6 +108,9 @@ export const NewStudent  = () => {
       level: "Advanced",
       admin: "Webbrain Admin",
       phone: "+998 20 007 1226",
+      balance: "-200,000",
+      parent: "Eshmatov Toshmat",
+      completed: true,
     },
   ];
   const data1 = [
@@ -122,12 +161,4 @@ export const NewStudent  = () => {
   );
 };
 
-
-
-export default NewStudent;
-
-
-
-
-
-
+export default Schedule;

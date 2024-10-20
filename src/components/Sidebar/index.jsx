@@ -1,11 +1,23 @@
-import React, { useEffect, useState } from 'react';
 import { Outlet, useLocation, useNavigate } from "react-router-dom";
-import {Container, Side, Body, Wrapper, Logo, LogOut, Menu, MenuItem, Arrow, ChildWrapper, ExitIcon} from './style'
-import Navbar from "../Navbar"
-import Profile from "./profile"
-import sidebar from "../../utils/sidebar"
+import {
+  Arrow,
+  Body,
+  ChildWrapper,
+  Container,
+  ExitIcon,
+  LogOut,
+  Logo,
+  Menu,
+  MenuItem,
+  Side,
+  Wrapper,
+} from "./style";
+import Navbar from "../Navbar";
+import { Profile } from "./profile";
+import sidebar from "../../utils/sidebar";
+import React, { useEffect, useState } from "react";
 
-export default function Sidebar() {
+export const Sidebar = () => {
   const [open, setOpen] = useState([]);
 
   const navigate = useNavigate();
@@ -103,4 +115,4 @@ export default function Sidebar() {
       </Body>
     </Container>
   );
-}
+};

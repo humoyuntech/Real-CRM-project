@@ -1,5 +1,5 @@
-import {AllLids} from '../../../components/Lids/All'
+import { AllLids } from "../../../components/Lids/All";
 
-const AllLidsWiew = () => <AllLids />;
+export const AllLidsView = () => <AllLids />;
 
-export default AllLidsWiew;
+export default AllLidsView;

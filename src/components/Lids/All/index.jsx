@@ -1,30 +1,25 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable react/no-unescaped-entities */
 import { useState } from "react";
-import GenericTable from "../../Generics/Table";
-import {Container, Action} from "./style";
-import Breadcrumb from "../../Generics/BreadCrumb";
+import { GenericTable } from "../../Generics/Table";
+import { Action, Container } from "./style";
+import { Breadcrumb } from "../../Generics/BreadCrumb";
 import GenericButton from "../../Generics/Button";
 import GenericSelect from "../../Generics/Select";
-
 import AllLidsModal from "./modal";
 
 export const AllLids = () => {
   const [open, setOpen] = useState(false);
   const [modalOpen, setModal] = useState(false);
-  const [modalProps, setModalProps] = useState({})
-
+  const [modalProps, setModalProps] = useState({});
   const onEdit = (e, res) => {
     e.stopPropagation();
     setModal(!modalOpen);
     setModalProps(res);
   };
-
   const onMove = (e) => {
     e.stopPropagation();
   };
-
- const headCells = [
+  const headCells = [
     { id: "name", label: "O'quvchining ismi" },
     { id: "group", label: "Guruh / Fan" },
     { id: "date", label: "Dars kuni va vaqti" },
@@ -41,7 +36,6 @@ export const AllLids = () => {
       ),
     },
   ];
-
   let rows = [
     {
       id: 1,
@@ -74,45 +68,46 @@ export const AllLids = () => {
       admin: "Webbrain Admin",
     },
   ];
-
   const data1 = [
-    {value: "uzbek", title: "Uzbek"},
-    {value: "arabic", title: "Arabic"},
-    {value: "turkish", title: "Turkish"},
-    {value: "english", title: "English"},
-    {value: "russian", title: "Russian"},
-    {value: "german", title: "German"},
+    { value: "uzbek", title: "Uzbek" },
+    { value: "russian", title: "Russian" },
+    { value: "english", title: "English" },
   ];
 
-  const onToggleModal = () =>{
+  const onToggleModal = () => {
     setModal(!modalOpen);
     setModalProps(null);
-  }
-
-  const onSave = () =>{
-    console.log("onSave");
-    
-}
-
+  };
+  const onSave = () => {
+    // setModal(!modalOpen);
+  };
   return (
     <Container>
-      <AllLidsModal data={modalProps} open={modalOpen} onClose={onToggleModal} onSave={onSave}/>
+      <AllLidsModal
+        data={modalProps}
+        open={modalOpen}
+        onClose={onToggleModal}
+        onSave={onSave}
+      />
       <Breadcrumb>
-          <GenericButton type="import" onClick={() => setOpen(!open)}>Import</GenericButton>
-          <GenericButton type="filter" onClick={() => setOpen(!open)}>Filter</GenericButton>
-          <GenericButton type="add" onClick={onToggleModal}>Lid qo'shish</GenericButton>         
+        <GenericButton type="import" onClick={() => setOpen(!open)}>
+          Import
+        </GenericButton>
+        <GenericButton type="filter" onClick={() => setOpen(!open)}>
+          Filter
+        </GenericButton>
+        <GenericButton type="add" onClick={onToggleModal}>
+          Lid qo'shish
+        </GenericButton>
       </Breadcrumb>
       <GenericTable open={open} headCells={headCells} rows={rows}>
-              <GenericSelect data={data1} />
-              <GenericSelect data={data1} />
-              <GenericSelect data={data1} />
-              <GenericSelect data={data1} />
-              <GenericSelect data={data1} />
-              <GenericSelect data={data1} />
+        <GenericSelect data={data1} />
+        <GenericSelect data={data1} />
+        <GenericSelect data={data1} />
+        <GenericSelect data={data1} />
+        <GenericSelect data={data1} />
+        <GenericSelect data={data1} />
       </GenericTable>
     </Container>
   );
 };
-
-
-
