@@ -35,3 +35,42 @@ Action.Delete = styled(del)`
   width: 42px;
   height: 42px;
 `;
+
+export const ModalContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  border: 1px solid #f0f0f0;
+  width: 200px;
+  height: 200px;
+  background: white;
+  border-radius: 8px;
+  transform: translate(-50%, 15%);
+  top: ${({ y }) => `${y}px`};
+  left: ${({ x }) => `${x}px`};
+`;
+
+export const Arrow = styled.div`
+  border: 1px solid #f0f0f0;
+  width: 32px;
+  height: 32px;
+  align-self: center;
+  transform: rotate(45deg);
+  margin-top: -16px;
+  background-color: white;
+  border-color: #f0f0f0 transparent transparent #f0f0f0;
+`;
+
+export const StatusWrapper = styled.div`
+  display: flex;
+  /* height: 32px; */
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 15px;
+  /* margin: 5px 0; */
+  &:hover {
+    background: #f8fafc;
+  }
+`;
