@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import edit from "../../../assets/icons/edit.svg?react";
+import del from "../../../assets/icons/delete.svg?react";
 
 export const Container = styled.div``;
 export const Action = styled.div`
@@ -14,7 +15,7 @@ Action.Edit = styled(edit)`
   width: 42px;
   height: 42px;
 `;
-Action.Move = styled(edit)`
+Action.Move = styled(del)`
   padding: 10px;
   width: 42px;
   height: 42px;
@@ -46,4 +47,5 @@ Devider.Title = styled.div`
 export const Section = styled.div`
   display: flex;
   padding: 12px 0;
+  align-items: center;
 `;

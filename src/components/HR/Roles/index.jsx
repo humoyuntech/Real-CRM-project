@@ -82,7 +82,7 @@ export const Roles = () => {
           Filter
         </GenericButton> */}
         <GenericButton type="add" onClick={onToggleModal}>
-          Xona qo'shish
+          Rolni qo'shish
         </GenericButton>
       </Breadcrumb>
       <GenericTable

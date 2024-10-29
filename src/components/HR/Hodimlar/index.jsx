@@ -66,7 +66,6 @@ export const Hodimlar = () => {
       filial: "Beruniy",
     },
   ];
-
   // const data1 = [
   //   { value: "uzbek", title: "Uzbek" },
   //   { value: "russian", title: "Russian" },
@@ -113,4 +112,4 @@ export const Hodimlar = () => {
   );
 };
 
-export default Hodimlar
+export default Hodimlar;
