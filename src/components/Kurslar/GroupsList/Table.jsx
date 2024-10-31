@@ -76,6 +76,7 @@ function Row(props) {
 }
 
 export default function CollapsibleTable(props) {
+  // eslint-disable-next-line no-unused-vars
   const { cells, rows } = props;
   return (
     <TableContainer component={Paper}>
