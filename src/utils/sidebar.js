@@ -19,8 +19,10 @@ import { AllStudentsView } from "../view/Students/All.jsx";
 import GuruhlarView from "../view/Guruhlar/Guruhlar.jsx";
 // import { ScheduleView } from "../view/Guruhlar/Schedule.jsx";
 import { RoomsView } from "../view/Guruhlar/Rooms.jsx";
-import RolesView from "../view/HR/Roles.jsx";
 import HodimlarView from "../view/HR/Hodimlar.jsx";
+import RolesView from "../view/HR/Roles.jsx";
+import ListView from "../view/Kurslar/List.jsx";
+import FieldView from "../view/Kurslar/Field.jsx";
 
 const sidebar = [
   {
@@ -189,7 +191,7 @@ const sidebar = [
         path: "/kurslar/all-kurslar",
         parentID: 6,
         isPrivate: true,
-        element: Generics,
+        element: ListView,
         role: ["admin", "manager"],
       },
       {
@@ -198,7 +200,7 @@ const sidebar = [
         title: "Yo'nalishlar",
         path: "/kurslar/yonalish",
         isPrivate: true,
-        element: Generics,
+        element: FieldView,
         role: ["admin", "manager"],
       },
     ],
