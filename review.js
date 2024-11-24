@@ -40,12 +40,11 @@
  */
 
 
-// 40-dars 
+// 41-dars 
 
-// 10:00
 
-// git branch -M "#016/roleModal"
-// git push -u origin "#016/roleModal"
+// git branch -M "#017/tableCollapseDetails"
+// git push -u origin "#017/tableCollapseDetails"
 
 
 
