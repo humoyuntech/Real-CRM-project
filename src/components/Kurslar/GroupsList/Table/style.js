@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import edit from "../../../assets/icons/edit.svg?react";
-import del from "../../../assets/icons/delete.svg?react";
+import edit from "../../../../assets/icons/edit.svg?react";
+import del from "../../../../assets/icons/delete.svg?react";
 
 export const Edit = styled(edit)`
   padding: 4px;
@@ -64,5 +64,3 @@ export const TimelineWrapper = styled.div`
   width: 100%;
   max-width: 300px;
 `;
-
-// 27:00
