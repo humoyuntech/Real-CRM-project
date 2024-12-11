@@ -49,13 +49,11 @@
  */
 
 
-// 44-dars 
+// 45-dars 
 
-
-
-// git branch -M "#019/groupListAddModal"
-//  git commit -m "44-dars/setting sidebar created"
-// git push -u origin "#019/groupListAddModal"
+// git branch -M "#21/sozlamalar/umumiy/pages"
+// git commit -m "45-video/call page"
+// git push -u origin "#21/sozlamalar/umumiy/pages"
 
 
 
