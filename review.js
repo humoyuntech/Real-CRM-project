@@ -49,10 +49,10 @@
  */
 
 
-// 45-dars 
+// 47-dars 
 
 // git branch -M "#21/sozlamalar/umumiy/pages"
-// git commit -m "45-video/call page"
+// git commit -m "45-47-video/All call page"
 // git push -u origin "#21/sozlamalar/umumiy/pages"
 
 
@@ -215,3 +215,35 @@
 
 
 
+// 30 - dars | Lids Page
+// — Creating first class page 
+// — Creating New Student Page
+
+// 31 - dars | Student Page 
+// — Creating All Student page
+// — Creating Archive Page
+// — Creating Active Page
+// — Configure navigation utils
+
+
+//  - dars | 
+// —  
+// — 
+// — 
+// — 
+
+//  45 - dars | Umumiy Sozlamalar
+// —  Create sozlamalar page
+// — Create upload image
+
+// 46 - dars | Filiallar - 1 
+// — Configure the route
+// — Create mock data
+// — Create filiallar page
+// — Git flow concept
+
+// 47 - dars |  Sorovnomalar | CallConfig 
+// —  Configure the route
+// —  Create mock data
+// —  Create sorovnoma page
+// — Create call page
