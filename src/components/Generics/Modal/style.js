@@ -34,4 +34,3 @@ export const Footer = styled.div`
   gap: 16px;
   margin-top: 32px;
 `;
-
