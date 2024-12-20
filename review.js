@@ -49,11 +49,11 @@
  */
 
 
-// 47-dars 
+// 48-dars 
 
-// git branch -M "#021/sozlamalar/umumiy/pages"
-// git commit -m "45-47-video/All call page"
-// git push -u origin "#021/sozlamalar/umumiy/pages"
+// git branch -M "#022/bugfix"
+// git commit -m "48-video/bug fixed"
+// git push -u origin "#022/bugfix"
 
 
 
