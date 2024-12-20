@@ -6,7 +6,6 @@ import Checkin from "../components/Guruhlar/Guruhlar/Checkin";
 import UmumiySidebar from "../components/Sozlamalar/Umumiy/Sidebar";
 import { umumiy } from "../utils/sozlamalar";
 
-
 export const Root = () => {
   return (
     <Container>
@@ -67,10 +66,6 @@ export const Root = () => {
         })}
 
         <Route path="/" element={<Navigate to={"/analitika"} />} />
-        <Route
-          path="/sozlamalar/umumiy/"
-          element={<Navigate to={"/sozlamalar/umumiy/check"} />}
-        />
         <Route path="*" element={<h1>404 not found</h1>} />
       </Routes>
     </Container>
