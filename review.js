@@ -51,9 +51,9 @@
 
 // 47-dars 
 
-// git branch -M "#21/sozlamalar/umumiy/pages"
+// git branch -M "#021/sozlamalar/umumiy/pages"
 // git commit -m "45-47-video/All call page"
-// git push -u origin "#21/sozlamalar/umumiy/pages"
+// git push -u origin "#021/sozlamalar/umumiy/pages"
 
 
 
