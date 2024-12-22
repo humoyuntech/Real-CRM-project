@@ -1,19 +1,19 @@
 import { Outlet } from "react-router-dom";
-import { umumiy } from "../../../../utils/sozlamalar";
+import { manager } from "../../../../utils/sozlamalar";
 import { Body, Container, Link, Sidebar, Wrapper } from "./style";
 
-export const UmumiySidebar = () => {
+export const ManagerSidebar = () => {
   return (
     <Container>
       <Wrapper>
         <Sidebar>
-          {umumiy.map((item) => {
+          {manager.map((item) => {
             const { icon: Icon } = item;
             return (
               <Link
                 key={item.path}
-                to={`/sozlamalar/umumiy/${item.path}`}
-                state={{ parent: ["Sozlamalar", "Umumiy"], child: item.title }}
+                to={`/sozlamalar/manager/${item.path}`}
+                state={{ parent: ["Sozlamalar", "Manager"], child: item.title }}
               >
                 <Icon className="sub-icon" /> {item.title}
               </Link>
@@ -28,4 +28,4 @@ export const UmumiySidebar = () => {
   );
 };
 
-export default UmumiySidebar;
+export default ManagerSidebar;
