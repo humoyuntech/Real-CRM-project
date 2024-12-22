@@ -49,11 +49,10 @@
  */
 
 
-// 48-dars 
-
-// git branch -M "#022/bugfix"
-// git commit -m "48-video/bug fixed"
-// git push -u origin "#022/bugfix"
+// 49-dars 
+// git branch -M "#023/sozlamalar/manager" 
+// git commit -m "49-video/manager page done"
+// git push -u origin "#023/sozlamalar/manager" 
 
 
 
@@ -213,8 +212,6 @@
 // — Creating first class page 
 // — Creating New Student Page
 
-
-
 // 30 - dars | Lids Page
 // — Creating first class page 
 // — Creating New Student Page
@@ -225,12 +222,19 @@
 // — Creating Active Page
 // — Configure navigation utils
 
+// 31 - dars | Student Page 
+// —  Creating All Student page
+// — Creating Archive page
+// — Configure navigation utils
 
-//  - dars | 
-// —  
-// — 
-// — 
-// — 
+// 32 - dars | Guruhlar Page 
+// — Undestanding git merge 
+// —  Guruhlar navigation config
+// —  Creating Archive page
+// —  Generic table checking config
+
+
+
 
 //  45 - dars | Umumiy Sozlamalar
 // —  Create sozlamalar page
@@ -247,3 +251,17 @@
 // —  Create mock data
 // —  Create sorovnoma page
 // — Create call page
+
+// 48 - dars | 
+
+
+// 49 - dars | Bug Fix.
+// —  How to debug.
+// — Navigation bug fixed.
+// — Fix breadcrump bug.
+
+//  - dars | 
+// —  
+// — 
+// — 
+// — 
