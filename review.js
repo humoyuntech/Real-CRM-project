@@ -49,10 +49,10 @@
  */
 
 
-// 49-dars 
-// git branch -M "#023/sozlamalar/manager" 
-// git commit -m "49-video/manager page done"
-// git push -u origin "#023/sozlamalar/manager" 
+// 50-dars 
+// git branch -M "#024/Manager" 
+// git commit -m "50-video/Manager"
+// git push -u origin "#024/Manager" 
 
 
 
@@ -233,8 +233,75 @@
 // —  Creating Archive page
 // —  Generic table checking config
 
+// 33 - dars | Xonalar
+// —  Bug fix
+// — Create xonalar mock data
+// — Create xonalar UI
 
+// 34 - dars | Checking Page 
+// —  Create checkin UI
+// — Create logic for data structre
+// — Create checkin navigation
 
+// 35 - dars | 
+// —  
+// — 
+// — 
+// — 
+
+// 36 - dars | 
+// —  
+// — 
+// — 
+// — 
+
+// 37 - dars | 
+// —  
+// — 
+// — 
+// — 
+
+// 38 - dars | 
+// —  
+// — 
+// — 
+// — 
+
+// 39 - dars | 
+// —  
+// — 
+// — 
+// — 
+
+// 40 - dars | 
+// —  
+// — 
+// — 
+// — 
+
+// 41 - dars | 
+// —  
+// — 
+// — 
+// — 
+
+// 42 - dars | 
+// —  
+// — 
+// — 
+// — 
+
+// 43 - dars | 
+// —  
+// — 
+// — 
+// — 
+
+// 44 - dars | 
+// —  
+// — 
+// — 
+// — 
 
 //  45 - dars | Umumiy Sozlamalar
 // —  Create sozlamalar page
@@ -259,6 +326,14 @@
 // —  How to debug.
 // — Navigation bug fixed.
 // — Fix breadcrump bug.
+
+// 50 - dars | Manager
+// —  Fix route icons
+// — Fix sub sidebar bug
+// — Create modal
+
+
+
 
 //  - dars | 
 // —  

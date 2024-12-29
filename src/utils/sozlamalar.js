@@ -15,15 +15,12 @@ import CallConfigView from "../view/Sozlamalar/CallConfig";
 // Manager
 import TolovlarView from "../view/Sozlamalar/Tolovlar";
 import DarajalarView from "../view/Sozlamalar/Darajalar";
+// Ustoz
+import KPIView from "../view/Sozlamalar/KPI";
+import OylikView from "../view/Sozlamalar/Oylik";
 
 export const umumiy = [
-  { id: 1,
-    icon: Check,
-    element: CheckView,
-    path: "check",
-    title: "Check",
-  },
-
+  { id: 1, icon: Check, element: CheckView, path: "check", title: "Check" },
   {
     id: 2,
     icon: filial,
@@ -31,7 +28,6 @@ export const umumiy = [
     path: "filiallar",
     title: "Filiallar",
   },
-
   {
     id: 3,
     icon: xabarnoma,
@@ -39,7 +35,6 @@ export const umumiy = [
     path: "xabarnomalar",
     title: "Xabarnomalar",
   },
-
   {
     id: 4,
     icon: sorov,
@@ -47,7 +42,6 @@ export const umumiy = [
     path: "sorovnoma",
     title: "So'rovnoma",
   },
-
   {
     id: 5,
     icon: status,
@@ -55,7 +49,6 @@ export const umumiy = [
     path: "status",
     title: "Status ",
   },
-  
 ];
 
 export const manager = [
@@ -72,5 +65,21 @@ export const manager = [
     element: DarajalarView,
     path: "darajalar",
     title: "Darajalar",
+  },
+];
+export const ustoz = [
+  {
+    id: 2,
+    icon: Check,
+    element: KPIView,
+    path: "kpi",
+    title: "KPI",
+  },
+  {
+    id: 3,
+    icon: filial,
+    element: OylikView,
+    path: "oylik",
+    title: "Oylik",
   },
 ];
