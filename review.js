@@ -49,10 +49,10 @@
  */
 
 
-// 50-dars 
-// git branch -M "#024/Manager" 
-// git commit -m "50-video/Manager"
-// git push -u origin "#024/Manager" 
+// 51-dars 
+// git branch -M "#025/sozlamalar-talabalar" 
+// git commit -m "51-video/UI The End Sozlamalar Talabalar"
+// git push -u origin "#025/sozlamalar-talabalar"  
 
 
 
@@ -243,65 +243,59 @@
 // — Create logic for data structre
 // — Create checkin navigation
 
-// 35 - dars | 
-// —  
-// — 
-// — 
-// — 
+// 35 - dars | Checkin Status
+// — Create Statsu Modal
+// — Icon logic for status
+// — Create weekly checkin UI
+// — Add new properties on Generic table
 
-// 36 - dars | 
-// —  
-// — 
-// — 
-// — 
+// 36 - dars | Checkin Status
+// —  Create Statsu Modal
+// — Test ref on onClose modal
+// — Create event on modal
 
-// 37 - dars | 
-// —  
-// — 
-// — 
-// — 
+// 37 - dars | Bug fix
+// —  Modal Bug fix
+// — get mouse data
 
-// 38 - dars | 
-// —  
-// — 
-// — 
-// — 
+// 38 - dars | Xonalar Page
+// — HR folder structure
+// — Create xonalar modal
+// — Create Xonalar Page
 
-// 39 - dars | 
-// —  
-// — 
-// — 
-// — 
+// 39 - dars | Role Modal
+// — Create Role Modal
+// — Checkboc explanation
+// — Create role data structure
 
-// 40 - dars | 
-// —  
-// — 
-// — 
-// — 
+// 40 - dars | Kurslar Page
+// —  Kurslar Page
+// — Kurslar page navigation config
+// — Create mock data dor Kurslar
+// — Create Collapsable table 
 
-// 41 - dars | 
-// —  
-// — 
-// — 
-// — 
+// 41 - dars | Collapsable Table 
+// — Implement the UI
+// — Collapsable table 
+// — Collapsable table mock data
+// — Fix the bugs
 
-// 42 - dars | 
-// —  
-// — 
-// — 
-// — 
+// 42 - dars | Collapsable table 2
+// — Change UI
+// — Add button for each row
+// — Fix input design
 
-// 43 - dars | 
-// —  
-// — 
-// — 
-// — 
+// 43 - dars | Modal / Multisalect /
+// — Collapsable data
+// — Create multiselect input
+// — Fix multiselect bug
+// — Create child modal
 
-// 44 - dars | 
-// —  
-// — 
-// — 
-// — 
+// 44 - dars | Sub Sidebar
+// — Create inner sidebar
+// — Create folder structue
+// — Configure navigation
+// — Configure events
 
 //  45 - dars | Umumiy Sozlamalar
 // —  Create sozlamalar page
@@ -319,7 +313,11 @@
 // —  Create sorovnoma page
 // — Create call page
 
-// 48 - dars | 
+// 48 - dars | ----
+// —  
+// — 
+// — 
+// — 
 
 
 // 49 - dars | Bug Fix.
@@ -332,8 +330,10 @@
 // — Fix sub sidebar bug
 // — Create modal
 
-
-
+// 51 - dars | Sozlamalar Talabalar 
+// —  Route configuration 
+// — Talabalar UI page
+// — Folder structure
 
 //  - dars | 
 // —  
