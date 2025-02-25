@@ -17,6 +17,12 @@ import {
 } from "./style";
 
 export const Analitika = () => {
+  const url = import.meta.env.VITE_BASE_URL;
+
+  fetch(`${url}/tabs/media`)
+    .then((res) => res.json())
+    .then((res) => console.log(res, "javob"));
+
   return (
     <Container>
       <Title mb={16}>Analitika</Title>

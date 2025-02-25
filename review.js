@@ -49,10 +49,10 @@
  */
 
 
-// 51-dars 
-// git branch -M "#025/sozlamalar-talabalar" 
-// git commit -m "51-video/UI The End Sozlamalar Talabalar"
-// git push -u origin "#025/sozlamalar-talabalar"  
+// 52-dars 
+// git branch -M "#026/bacakend/exel_config" 
+// git commit -m "52-video/Backendni tayyorlash"
+// git push -u origin "#026/bacakend/exel_config"  
 
 
 
