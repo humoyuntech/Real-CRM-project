@@ -1,3 +1,4 @@
+import { useContext } from "react";
 import { media, privateData } from "../../utils/analitics";
 import Subtitle from "../Generics/Subtitle";
 import Title from "../Generics/Title";
@@ -15,14 +16,11 @@ import {
   SubCard,
   FooterWrapper,
 } from "./style";
+import { MentorContext } from "../../context/mentor";
 
 export const Analitika = () => {
-  const url = import.meta.env.VITE_BASE_URL;
-
-  fetch(`${url}/tabs/media`)
-    .then((res) => res.json())
-    .then((res) => console.log(res, "javob"));
-
+  const [state] = useContext(MentorContext);
+  console.log(state, "sta");
   return (
     <Container>
       <Title mb={16}>Analitika</Title>
