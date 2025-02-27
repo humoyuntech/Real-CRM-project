@@ -49,10 +49,10 @@
  */
 
 
-// 52-dars 
-// git branch -M "#026/bacakend/exel_config" 
-// git commit -m "52-video/Backendni tayyorlash"
-// git push -u origin "#026/bacakend/exel_config"  
+// 53-dars 
+// git branch -M "#027/bacakend/context_config" 
+// git commit -m "53-video/context_config"
+// git push -u origin "#027/bacakend/context_config"
 
 
 
