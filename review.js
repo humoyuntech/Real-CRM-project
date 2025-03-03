@@ -49,10 +49,11 @@
  */
 
 
-// 53-dars 
-// git branch -M "#027/bacakend/context_config" 
-// git commit -m "53-video/context_config"
-// git push -u origin "#027/bacakend/context_config"
+// 54.2- video
+
+// git branch -M "#028/bacakend/AnaliticsPage" 
+// git commit -m " 54.2- video/Analitics Page end"
+// git push -u origin "#028/bacakend/AnaliticsPage" 
 
 
 
@@ -335,8 +336,39 @@
 // — Talabalar UI page
 // — Folder structure
 
+// 52 - dars | Backend Config
+// — Exel database nima va qanday ishlaydi?
+// — Exel config
+// — Sheet Best
+// — .env config
+// — expressjs usage example
+// — exel vs express
+
+// 53 - dars | ContextApi Config 
+// — ContextApi usage explanation
+// — ContextApi Config
+// — User and Mentor Context example
+// — Multiple context usage two ways
+// — Context folder structure
+
+
+// 54/ #1 - dars | Analytics Page Rest Api 
+// —  request data from api
+// — get analytics page data
+// — manipulate backend data and utils data
+// — get moliya data
+// — get email data
+
+
+// 54/ #2 - dars | Analytics Page Rest Api 
+// —  data manipulation
+// — get moliya data
+// — get email data
+
+
 //  - dars | 
 // —  
 // — 
 // — 
 // — 
+
