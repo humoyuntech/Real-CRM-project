@@ -49,11 +49,11 @@
  */
 
 
-// 54.2- video
+// 56- video
 
-// git branch -M "#028/bacakend/AnaliticsPage" 
-// git commit -m " 54.2- video/Analitics Page end"
-// git push -u origin "#028/bacakend/AnaliticsPage" 
+// git branch -M "#030/LidsPage/Spinner" 
+// git commit -m " 54.2- video/LidsPage and Spinner"
+// git push -u origin "#030/LidsPage/Spinner" 
 
 
 
@@ -366,9 +366,28 @@
 // — get email data
 
 
+// 55 - dars | Lids Page 
+// —  Git compare
+// —  Lids page
+// —  Studwnt Context
+// — Generic Context
+// — Hooks Fetch
+// — Delete item
+// — Environment Veriable
+
+//  56 - dars | Generic Spinner
+// —  Lids Page bug fix
+// — Generic Spinner
+// — Fetch optimization
+
 //  - dars | 
 // —  
 // — 
 // — 
 // — 
 
+//  - dars | 
+// —  
+// — 
+// — 
+// — 
