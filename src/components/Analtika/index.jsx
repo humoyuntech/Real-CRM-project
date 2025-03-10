@@ -6,7 +6,17 @@ import Title from "../Generics/Title";
 import Email from "./Email";
 import Moliya from "./Moliya";
 
-import {Container, Card, Wrapper, Section, Plus, Counter, Arrow, SubCard, FooterWrapper} from "./style";
+import {
+  Container,
+  Card,
+  Wrapper,
+  Section,
+  Plus,
+  Counter,
+  Arrow,
+  SubCard,
+  FooterWrapper,
+} from "./style";
 import { AnalyticsContext } from "../../context/analytics";
 import { EmailsContext } from "../../context/emails";
 import { MediaContext } from "../../context/media";
@@ -37,8 +47,6 @@ export const Analitika = () => {
     getAnalytics();
     getMedia();
   }, []);
-
-  console.log(state, "state");
 
   return (
     <Container>
@@ -75,7 +83,6 @@ export const Analitika = () => {
       <Wrapper>
         {media?.map((value, i) => {
           const { [i + 1]: Icon } = mediaIcon;
-          console.log(Icon, "icon");
           return (
             <SubCard key={value.id} gap={24} title={value.title}>
               {/* TOP */}

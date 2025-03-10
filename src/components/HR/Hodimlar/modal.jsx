@@ -6,6 +6,7 @@ import Subtitle from "../../Generics/Subtitle";
 import GenericSelect from "../../Generics/Select";
 import Title from "../../Generics/Title";
 import { Devider, Section } from "./style";
+import { Checkbox } from "@mui/material";
 
 export const AllLidsModal = (props) => {
   const { data } = props;
@@ -13,7 +14,6 @@ export const AllLidsModal = (props) => {
     { value: "Frontend", title: "Frontend" },
     { value: "Backend", title: "Backend" },
   ];
-  console.log(data, "data");
   return (
     <Modal {...props}>
       <Title size="34px">Lid Qo'shish</Title>
@@ -47,10 +47,18 @@ export const AllLidsModal = (props) => {
       <Devider>
         <Devider.Filiallar>
           <Devider.Title>Filiallar</Devider.Title>
-          <Section>- Chilonzor</Section>
-          <Section>- Namangan</Section>
-          <Section>- Beruniy</Section>
-          <Section>- Ganga</Section>
+          <Section>
+            <Checkbox /> Chilonzor
+          </Section>
+          <Section>
+            <Checkbox /> Namangan
+          </Section>
+          <Section>
+            <Checkbox /> Beruniy
+          </Section>
+          <Section>
+            <Checkbox /> Ganga
+          </Section>
         </Devider.Filiallar>
         <Devider.Role>
           <Devider.Title>Role</Devider.Title>

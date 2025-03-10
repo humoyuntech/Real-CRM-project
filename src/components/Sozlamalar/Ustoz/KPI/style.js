@@ -1,4 +1,3 @@
-/* eslint-disable no-constant-binary-expression */
 import styled from "styled-components";
 
 export const Container = styled.div`

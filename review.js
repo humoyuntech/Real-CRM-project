@@ -49,11 +49,11 @@
  */
 
 
-// 56- video
+// 57- video
 
-// git branch -M "#029/LidsPage/Spinner" 
-// git commit -m " 54.2- video/LidsPage and Spinner"
-// git push -u origin "#029/LidsPage/Spinner" 
+// git branch -M "#030/GenericURLHooks" 
+// git commit -m " 57- video/Generic URL Hooks"
+// git push -u origin "#030/GenericURLHooks" 
 
 
 
@@ -380,11 +380,11 @@
 // — Generic Spinner
 // — Fetch optimization
 
-//  - dars | 
-// —  
-// — 
-// — 
-// — 
+//  57 - dars | Generic URL Hooks
+// —  URL params usage
+// — Hooks replace/URL
+// — Hooks query/ URL
+
 
 //  - dars | 
 // —  

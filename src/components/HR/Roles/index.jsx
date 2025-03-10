@@ -4,11 +4,9 @@ import { GenericTable } from "../../Generics/Table";
 import { Action, Container } from "./style";
 import { Breadcrumb } from "../../Generics/BreadCrumb";
 import GenericButton from "../../Generics/Button";
-// import GenericSelect from "../../Generics/Select";
 import AllLidsModal from "./modal";
 
 export const Roles = () => {
-  // const [open, setOpen] = useState(false);
   const [modalOpen, setModal] = useState(false);
   const [modalProps, setModalProps] = useState({});
   const onEdit = (e, res) => {
@@ -22,7 +20,7 @@ export const Roles = () => {
   const headCells = [
     { id: "daraja", label: "Daraja" },
     { id: "izoh", label: "Daraja Izohi" },
-  
+
     {
       id: "action",
       label: "",
@@ -38,22 +36,22 @@ export const Roles = () => {
     {
       id: 1,
       daraja: "Moderator",
-      izoh: "Adminlarga tegishli ma'lumotlar"
+      izoh: "Adminlarga tegishli malumotlar",
     },
     {
       id: 2,
-      daraja: "Direktor",
-      izoh: "Ba'zadagi barcha ma'lumotlar"
+      daraja: "Director",
+      izoh: "Bazadagi barcha malumotlarni ko'rish huquqi",
     },
     {
       id: 3,
-      daraja: "Menager",
-      izoh: "Barcha ma'lumotlar, Direktor PMdan tashqari"
+      daraja: "Manager",
+      izoh: "Barcha malumotlar, Director PM dan tashqari",
     },
     {
       id: 4,
-      daraja: "O'qituvchi",
-      izoh: "O'qituvchining darslari xolos"
+      daraja: "O'qtuvchi",
+      izoh: "Ustozning darslari holos",
     },
   ];
   // const data1 = [
@@ -82,7 +80,7 @@ export const Roles = () => {
           Filter
         </GenericButton> */}
         <GenericButton type="add" onClick={onToggleModal}>
-          Rolni qo'shish
+          Ro'li qo'shish
         </GenericButton>
       </Breadcrumb>
       <GenericTable
@@ -102,5 +100,4 @@ export const Roles = () => {
   );
 };
 
-export default Roles
-
+export default Roles;

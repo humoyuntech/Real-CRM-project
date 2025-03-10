@@ -38,7 +38,7 @@ export const Tolovlar = () => {
   const rowsBonus = [
     {
       id: 1,
-      bonus: "Yangi studentlar uchun",
+      bonus: "Yani studentlar uchun",
       price: "5,000 som",
     },
     {
