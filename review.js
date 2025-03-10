@@ -51,9 +51,9 @@
 
 // 56- video
 
-// git branch -M "#09/LidsPage/Spinner" 
+// git branch -M "#029/LidsPage/Spinner" 
 // git commit -m " 54.2- video/LidsPage and Spinner"
-// git push -u origin "#09/LidsPage/Spinner" 
+// git push -u origin "#029/LidsPage/Spinner" 
 
 
 
