@@ -49,11 +49,11 @@
  */
 
 
-// 58- video
-
-// git branch -M "#031/LidsFilter" 
-// git commit -m " 58- video/Backend Lids Filter"
-// git push -u origin "#031/LidsFilter" 
+// 59- video / 58 -GitHub 
+// git branch -M "#032/LidsAdd" 
+// git add -A
+// git commit -m " 58- video/Backend Lids Add"
+// git push -u origin "#032/LidsAdd" 
 
 
 
@@ -150,14 +150,17 @@
 // — Subtitle counter property added.
 // — Email  components separated and completed
 // — Moliya components separated and started
+
 // 18 - dars | Generic Date
 // — Make a generic date
 // — Generic weeks
 // — Generic full-year
 // — Active date
+
 // 19 - dars | Deployment
 // — Deploy to Netlify 
 // — Fix width
+
 // 20 - dars | Breadcrumb
 // — Creating Generic Breadcrumb 
 // — Passing state through router DOM
@@ -386,7 +389,26 @@
 // — Hooks query/ URL
 
 
+// 57 /#2 - dars | Houzing URL Hooks 
+
+// 58 - dars | Lids Filter
+// —  Lids Filter
+// — Change multi state with a function
+// — How to costum hooks like useQuery and useReplace
+// — Default value after refresh
+// — How to use data
+
+//  59 - dars | Lids Add
+// —  Lids add
+// — Input bug fixed
+// — Passing props
+// — Modal usage explanation
+
 //  - dars | 
+// —  
+// — 
+// — 
+// — 
 // —  
 // — 
 // — 
