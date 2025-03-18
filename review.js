@@ -49,11 +49,11 @@
  */
 
 
-// 60- video / 59 -GitHub 
-// git branch -M "#033/LidsEdit" 
+// 61- video / 60 -GitHub 
+// git branch -M "#034/FirstClass" 
 // git add -A
-// git commit -m " 60- video/Backend Lids Edit"
-// git push -u origin "#033/LidsEdit" 
+// git commit -m " 61- video/First Class"
+// git push -u origin "#034/FirstClass" 
 
 
 
@@ -403,6 +403,20 @@
 // — Input bug fixed
 // — Passing props
 // — Modal usage explanation
+
+//  60 - dars | Lids Edit
+// —  Edit lids page
+// — Passing props
+// — Generic select bux fix
+// — Update intial state
+// —  Optimze Generic URL
+
+//  61 - dars | Yangi Talabalar
+// —  Filter data
+// — Manipulate modals
+// — Add Yangi talabalar
+// — Edit Yangi Talabalar
+
 
 //  - dars | 
 // —  
