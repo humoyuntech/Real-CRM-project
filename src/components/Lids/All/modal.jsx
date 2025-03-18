@@ -17,7 +17,7 @@ import useFetch from "../../../hooks/useFetch";
 const initialState = {
   name: "",
   surname: "",
-  group: "", //G28
+  group: "", //G11
   added_date: `${moment().day()}/${moment().month()}/${moment().year()}`,
   field: "", // Frontend
   phone: "",
@@ -61,10 +61,7 @@ export const AllLidsModal = (props) => {
     else
       request("/tabs/students", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: { state, id: Date.now() },
+        body: { ...state, id: Date.now() },
       }).then(() => {
         props.onClose(setState(initialState));
       });
