@@ -49,11 +49,11 @@
  */
 
 
-// 61- video / 60 -GitHub 
-// git branch -M "#034/FirstClass" 
+// 62- video / (Sardorni githubida 61) 
+// git branch -M "#035/Students"
 // git add -A
-// git commit -m " 61- video/First Class"
-// git push -u origin "#034/FirstClass" 
+// git commit -m "62- video/students done"
+// git push -u origin "#035/Students"
 
 
 
