@@ -49,11 +49,11 @@
  */
 
 
-// 63- video / (Sardorni githubida 62) 
-// git branch -M "#036/Backend/Grups"
-// git add -A
-// git commit -m "63- video/groups done"
-// git push -u origin "#036/Backend/Grups"
+// 64- video / (Sardorni githubida 63) 
+// git branch -M "#037/Backend/Checkin"
+// git add .
+// git commit -m "64- video/checking done"
+// git push -u origin "#037/Backend/Checkin"
 
 
 
