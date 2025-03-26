@@ -2,7 +2,7 @@ export const students = [
   {
     id: 1,
     phone: "+998 20 007 1226",
-    name: "Rustamov Khumoyun",
+    name: "Holmatov Toshmat",
     "13-07": "keldi",
     "14-07": "sababli",
     "15-07": "sababsiz",
@@ -15,7 +15,7 @@ export const students = [
   {
     id: 2,
     phone: "+998 20 007 1226",
-    name: "Ixiyorov Ibrohim",
+    name: "Gulmatov Holmat",
     "13-07": "keldi",
     "14-07": "sababli",
     "15-07": "keldi",
@@ -28,7 +28,7 @@ export const students = [
   {
     id: 3,
     phone: "+998 20 007 1226",
-    name: "Kamolov Sunnat",
+    name: "Shermatov Gulmat",
     "13-07": "keldi",
     "14-07": "keldi",
     "15-07": "keldi",

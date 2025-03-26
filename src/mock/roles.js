@@ -1,56 +1,56 @@
 export const roles = [
+  [
+    "O'qtuvchi",
     [
-      "O'qtuvchi",
-      [
-        { status: true, title: "Dars jadvali" },
-        { status: false, title: "Oylik" },
-        { status: true, title: "Status" },
-        { status: true, title: "Rayting" },
-      ],
+      { status: true, title: "Dars jadvali" },
+      { status: false, title: "Oylik" },
+      { status: true, title: "Status" },
+      { status: true, title: "Rayting" },
     ],
+  ],
+  [
+    "Direktor",
     [
-      "Direktor",
-      [
-        { status: true, title: "Dars jadvali" },
-        { status: false, title: "Oylik" },
-        { status: true, title: "Status" },
-        { status: true, title: "Rayting" },
-      ],
+      { status: true, title: "Dars jadvali" },
+      { status: false, title: "Oylik" },
+      { status: true, title: "Status" },
+      { status: true, title: "Rayting" },
     ],
+  ],
+  [
+    "Administrator",
     [
-      "Administrator",
-      [
-        { status: true, title: "Dars jadvali" },
-        { status: false, title: "Oylik" },
-        { status: true, title: "Status" },
-        { status: true, title: "Rayting" },
-      ],
+      { status: true, title: "Dars jadvali" },
+      { status: false, title: "Oylik" },
+      { status: true, title: "Status" },
+      { status: true, title: "Rayting" },
     ],
+  ],
+  [
+    "HR",
     [
-      "HR",
-      [
-        { status: true, title: "Dars jadvali" },
-        { status: false, title: "Oylik" },
-        { status: true, title: "Status" },
-        { status: true, title: "Rayting" },
-      ],
+      { status: true, title: "Dars jadvali" },
+      { status: false, title: "Oylik" },
+      { status: true, title: "Status" },
+      { status: true, title: "Rayting" },
     ],
+  ],
+  [
+    "Media",
     [
-      "Media",
-      [
-        { status: true, title: "Dars jadvali" },
-        { status: false, title: "Oylik" },
-        { status: true, title: "Status" },
-        { status: true, title: "Rayting" },
-      ],
+      { status: true, title: "Dars jadvali" },
+      { status: false, title: "Oylik" },
+      { status: true, title: "Status" },
+      { status: true, title: "Rayting" },
     ],
+  ],
+  [
+    "Manager",
     [
-      "Manager",
-      [
-        { status: true, title: "Dars jadvali" },
-        { status: false, title: "Oylik" },
-        { status: true, title: "Status" },
-        { status: true, title: "Rayting" },
-      ],
+      { status: true, title: "Dars jadvali" },
+      { status: false, title: "Oylik" },
+      { status: true, title: "Status" },
+      { status: true, title: "Rayting" },
     ],
-  ];
+  ],
+];
