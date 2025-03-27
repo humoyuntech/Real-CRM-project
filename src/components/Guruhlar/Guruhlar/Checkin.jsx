@@ -37,7 +37,15 @@ export const Checkin = () => {
             id: key,
             label: key,
             align: "center",
-            render: (props) => <Status value={props[key]} />,
+            render: (props) => (
+              <Status
+                value={props[key]}
+                title={key}
+                path={id}
+                reload={getData}
+                id={props.id}
+              />
+            ),
           },
         ];
     });
@@ -76,5 +84,3 @@ export const Checkin = () => {
 };
 
 export default Checkin;
-
-// "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
