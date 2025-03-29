@@ -49,11 +49,11 @@
  */
 
 
-// 65 - video / (Sardorni githubida 64) 
-// git branch -M "#038/Backend/CheckinEdit"
-// git add -A
-// git commit -m "64- video/Checkin Edit"
-// git push -u origin "#038/Backend/CheckinEdit"
+// 66 - video / (Sardorni githubida 65) 
+// git branch -M "#039/Backend/Xonalar"
+// git add .
+// git commit -m "66- video/Xonalar finished"
+// git push -u origin "#039/Backend/Xonalar"
 
 
 
@@ -411,11 +411,101 @@
 // — Update intial state
 // —  Optimze Generic URL
 
-//  61 - dars | Yangi Talabalar
-// —  Filter data
+//  61 - dars |First Class| Yangi Talabalar
+// — Filter data
 // — Manipulate modals
 // — Add Yangi talabalar
 // — Edit Yangi Talabalar
+
+
+// 62 - dars | Backend Students
+// —  Think like programmer
+// — Get data for Students page
+// — Student Modal
+// — Debug fetch and best sheet
+
+//  63 - dars | Backend Groups 
+// — VS code extensions
+// — Get/Put/Post data
+// — Create contants
+
+//  64 - dars | 
+// —  
+// — 
+// — 
+// — 
+// —  
+// — 
+// — 
+// — 
+
+//  65 - dars | 
+// —  
+// — 
+// — 
+// — 
+// —  
+// — 
+// — 
+// — 
+
+//  66 - dars | 
+// —  
+// — 
+// — 
+// — 
+// —  
+// — 
+// — 
+// — 
+
+//  - dars | 
+// —  
+// — 
+// — 
+// — 
+// —  
+// — 
+// — 
+// — 
+
+//  - dars | 
+// —  
+// — 
+// — 
+// — 
+// —  
+// — 
+// — 
+// — 
+
+//  - dars | 
+// —  
+// — 
+// — 
+// — 
+// —  
+// — 
+// — 
+// — 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //  - dars | 
