@@ -84,3 +84,5 @@ export const Checkin = () => {
 };
 
 export default Checkin;
+
+// "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",

@@ -6,8 +6,8 @@ import { Container, SearchIcon, Section } from "./style";
 
 export const Navbar = () => {
   const data = [
-    { value: "uzbek", title: "Uzbek" },
     { value: "russian", title: "Russian" },
+    { value: "uzbek", title: "Uzbek" },
     { value: "english", title: "English" },
   ];
   return (
