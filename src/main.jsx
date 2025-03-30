@@ -5,13 +5,12 @@ import Root from "./root";
 import { BrowserRouter } from "react-router-dom";
 import ContextProvider from "./context";
 
-
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <ContextProvider>
-      <React.StrictMode>
-        <BrowserRouter>
-           <Root />
-         </BrowserRouter>
-      </React.StrictMode>
+  <React.StrictMode>
+    <ContextProvider>
+      <BrowserRouter>
+        <Root />
+      </BrowserRouter>
     </ContextProvider>
+  </React.StrictMode>
 );
