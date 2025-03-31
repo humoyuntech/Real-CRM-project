@@ -49,11 +49,11 @@
  */
 
 
-// 67 - video / (Sardorni githubida 66) 
-// git branch -M "#040/Backend/Kurslar"
+// 68 - video / (Sardorni githubida 67) 
+// git branch -M "#041/Backend/add_students"
 // git add .
-// git commit -m "67- video/Kurslar done"
-// git push -u origin "#040/Backend/Kurslar""
+// git commit -m "68- video/Students done"
+// git push -u origin "#041/Backend/add_students"
 
 
 
