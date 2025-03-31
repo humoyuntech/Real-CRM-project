@@ -49,11 +49,10 @@
  */
 
 
-// 68 - video / (Sardorni githubida 67) 
-// git branch -M "#041/Backend/add_students"
+// git branch -M "#042/Finished"
 // git add .
-// git commit -m "68- video/Students done"
-// git push -u origin "#041/Backend/add_students"
+// git commit -m "Project finished in 01.04.2025"
+// git push -u origin "#042/Finished"
 
 
 
@@ -429,91 +428,81 @@
 // — Get/Put/Post data
 // — Create contants
 
-//  64 - dars | 
-// —  
-// — 
-// — 
-// — 
-// —  
-// — 
-// — 
-// — 
+//  64 - dars | Checkin
+// — Navigation bug fix 
+// — Create checking logic
+// — Create Checking Context
+// — Get data based on Groups
 
-//  65 - dars | 
-// —  
-// — 
-// — 
-// — 
-// —  
-// — 
-// — 
-// — 
+//  65 - dars | Checkin Edit
+// — Checkin Edit
+// — Modal bux fix
+// — Checkin bug fix
 
-//  66 - dars | 
-// —  
-// — 
-// — 
-// — 
-// —  
-// — 
-// — 
-// — 
+//  66 - dars | Xonalar
+// —  Get xonalar data
+// — Delete xonalar data
+// — Edit xonalar data
 
-//  - dars | 
-// —  
-// — 
-// — 
-// — 
-// —  
-// — 
-// — 
-// — 
+// 67 - dars | Kurslar
+// —  Get kurslar data
+// — Delete kurslar data
+// — Edit kurslar data 
+// — Yo'nalishlar edit
 
-//  - dars | 
-// —  
-// — 
-// — 
-// — 
-// —  
-// — 
-// — 
-// — 
+// 68 - dars | Kurslar | Add Student
+// —  Guruh qo'shish
+// — Manipulate backend data
+// — Barch kurslar test
 
-//  - dars | 
-// —  
-// — 
-// — 
-// — 
-// —  
-// — 
-// — 
-// — 
+// 69 - dars | Yo'nalishlar
+// —  Get yo'nalishlar data
+// — Delete yo'nalishlar data
+// — Edit yo'nalishlar data
 
+// 70 - dars | Backend Role 
+// —  Create Data Structure
+// — Get role data
+// — Manipulate roledata on UI
+// — Client UI logic
 
+// 71 - dars | Backend Xodimlar
+// —  Get xodimlar data
+// — Delete xodimlar data
+// — Edit xodimlar data
 
+// 72 - dars | Sozlamalar Check
+// — Get checkin data 
+// — Delete checkin data
+// — Edit chechin data
 
+// 73 - dars | Sozlamalar Filiallar
+// —  Get sozlamalar data
+// — Delete sozlamalar data
+// — Edit sozlamalar data
 
+// 74 - dars | Backend Xabarnoma  
+// —  Get xabarnoma data
+// — Delete xabarnoma data 
+// —  Edit xabarnoma data
 
+// 75 - dars | Backend Sorovnoma
+// —  Get so'rovnoma data
+// — Delete so'rovnoma data
+// — Edit so'rovnoma data
 
+// 76 - dars | Sozlamalar Status
+// —  Get status data
+// — Delete status data
+// — Edit status data
 
-
-
-
-
-
-
-
+// 77 - dars | Sozlamalar Menager
+// —  Get manager data
+// — Delete manager data
+// — Edit manager data
 
 
-
-
-
-//  - dars | 
-// —  
-// — 
-// — 
-// — 
-// —  
-// — 
-// — 
-// — 
+// 78 - dars | Sozlamalar Mentor | Students
+// —  Get mentor data
+// — Delete mentor data
+// — Edit mentor data

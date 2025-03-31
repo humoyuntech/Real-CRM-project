@@ -67,6 +67,13 @@ const LogOut = styled(Logo)`
   bottom: 0;
   border-top: 1px solid rgba(222, 225, 227, 1);
   border-bottom: 0;
+
+  &:hover{
+    background-color: #14AE5C;
+    color: white;
+    }
+    transition: all 1.5s ease; 
+    
 `;
 
 // PROFILE
